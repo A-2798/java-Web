@@ -1,0 +1,92 @@
+:root {
+  --el-color-primary: var(--primary-color);
+  --el-component-size-large: 48px;
+  --el-border-color: var(--primary-border-color);
+  --el-text-color-regular: var(--primary-text-color);
+  --el-color-primary-light-3: var(--primary-color);
+  --el-menu-base-level-padding: 20px;
+  --el-menu-item-height: 48px;
+  --el-color-primary-light-5: #bfc7d3;
+  --el-mask-color: var(--white-color);
+  --el-fill-color: #fff;
+  --el-fill-color-light: #f5f7fa;
+  --el-text-color-primary: var(--secondary-text-color);
+  --el-color-danger: #e7413e;
+  --el-text-color-primary: #303133;
+  .el-table {
+    --el-table-border-color: #f2f3f5;
+    --el-table-row-hover-bg-color: #fff;
+  }
+  --el-button-hover-border-color: #bde0ff;
+  --el-button-hover-bg-color: #ebf2f8;
+  .el-popover {
+    --el-popover-padding: 0px;
+  }
+  .el-header {
+    height: var(--header-height);
+    padding: 0 24px;
+    border-bottom: 1px solid var(--primary-border-color);
+    background: var(--white-color);
+  }
+  .el-button {
+    height: 40px;
+  }
+  .el-button--large {
+    height: 60px;
+  }
+  .el-button--small {
+    height: 32px;
+  }
+  .el-card {
+    border-radius: 8px;
+    .el-card__body {
+      padding: 0;
+    }
+  }
+  .el-pagination.is-background .btn-next.is-disabled,
+  .el-pagination.is-background .btn-next:disabled,
+  .el-pagination.is-background .btn-prev.is-disabled,
+  .el-pagination.is-background .btn-prev:disabled,
+  .el-pagination.is-background .el-pager li.is-disabled,
+  .el-pagination.is-background .el-pager li:disabled {
+    border: 1px solid #dcdfe6;
+  }
+  .el-pagination__jump {
+    color: var(--secondary-text-color);
+  }
+  .el-dialog {
+    border-radius: 8px;
+    padding: 21px 40px;
+  }
+  .el-dialog__header {
+    text-align: center;
+  }
+  .el-dialog__title {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--primary-text-color);
+  }
+  .el-dialog__body {
+    font-size: 17px;
+    color: var(--secondary-text-color);
+  }
+  .el-drawer__header {
+    margin-bottom: 0;
+    padding-top: 0;
+    border-bottom: 1px solid var(--primary-border-color);
+    height: 55px;
+    color: var(--primary-text-color);
+    font-weight: 700;
+    padding: 0 24px;
+  }
+  .el-drawer__body {
+    padding: 24px;
+  }
+  .el-drawer__footer {
+    border-top: 1px solid var(--primary-border-color);
+    padding: 16px 24px;
+  }
+  .el-popper {
+    max-width: 308px;
+  }
+}
