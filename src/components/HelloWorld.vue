@@ -1,7 +1,7 @@
 
 <template>
  <div>
-   11
+   11 lodash
  </div>
 </template>
 <script lang="js" setup>
