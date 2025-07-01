@@ -13,7 +13,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/admin": {
-        target: "http://ceshi13.dishait.cn", // 代理的服务器地址  后缀不用写 api
+        target: "http://ceshi13.dishait.cn",  // 代理的服务器地址  后缀不用写 api
         changeOrigin: true, // 是否跨域
       },
     },
