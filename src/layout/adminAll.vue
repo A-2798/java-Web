@@ -55,8 +55,9 @@ import { validatePassword } from '../utils/rules';
 import { User, Lock } from '@element-plus/icons-vue';
 import { useRouter } from 'vue-router';
 import { useStore } from 'vuex';
-const store = useStore();
+import _ from "lodash";
 
+const store = useStore();
 const router = useRouter();
 const loading = ref(false);
 
@@ -88,17 +89,22 @@ const loginRules = ref({
 
 
 // 登录逻辑
-const handleLogin = () => {
-  loading.value = true; //loading效果
+const handleLogin = _.throttle(() => {
+  loading.value = true; // 开始loading效果
 
-  store.dispatch("login", { username: loginForm.value.username, password: loginForm.value.password }).then((res) => {
-    console.log("登陆成功!")
-    loading.value = true; //停止loading
+  store.dispatch("login", {
+    username: loginForm.value.username,
+    password: loginForm.value.password
+  }).then((res) => {
+    console.log("登录成功!");
     router.push('/login');
+  }).catch((error) => {
+    console.error("登录失败:", error);
   }).finally(() => {
-    loading.value = false;//loading效果
-  })
-}
+    loading.value = false; // 确保loading状态最终被重置
+  });
+}, 2000); // 设置节流间隔为2秒
+
 
 // 键盘点击回车键进行登录功能
 function onKeyUp(e) {
