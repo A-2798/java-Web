@@ -1,0 +1,40 @@
+.box {
+  height: 100vh;
+
+  .right {
+    background-color: #616ff6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1,
+    span {
+      color: #fff;
+    }
+  }
+
+  .left {
+    background-color: #fff;
+    padding-top: 10%;
+    text-align: center;
+
+    .el-divider {
+      position: relative;
+      left: 20%;
+    }
+
+    .login-form {
+      padding: 0 30px;
+
+      .svg-container {
+        line-height: 0%;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+
+  }
+}
