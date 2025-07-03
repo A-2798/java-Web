@@ -120,5 +120,5 @@ onBeforeUnmount(() => {
 })
 </script>
 <style lang="scss" scoped>
-@import '~/assets/login.scss';
+@use '~/assets/login' as *;
 </style>
