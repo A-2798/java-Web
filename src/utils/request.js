@@ -2,7 +2,7 @@ import axios from "axios";
 import { getToken } from "~/utils/cookies.js"; //获取引入缓存cookies
 
 const service = axios.create({
-    baseURL: "/admin", //vite框架写法
+    baseURL: "/user", //vite框架写法
     timeout: 5000,
 });
 

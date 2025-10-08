@@ -1,23 +1,23 @@
 import { createRouter, createWebHistory } from "vue-router";
-import adminAll from "~/layout/adminAll.vue";
+import Login from "~/layout/login.vue";
 
 const routes = [
     {
         path: "/",
-        name: "admin",
-        component: adminAll,
+        name: "login",
+        component: Login,
     },
     {
-        path: "/login",
-        component: () => import("~/views/login.vue"), // 懒加载
+        path: "/home",
+        component: () => import("~/views/home.vue"), // 懒加载
         meta: {
-            title: "登录页",
+            title: "首页",
         },
     },
     {
         path: "/:pathMatch(.*)*",
-        name: "admin",
-        component: adminAll,
+        name: "login",
+        component: Login,
     },
 ];
 

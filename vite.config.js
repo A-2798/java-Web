@@ -12,8 +12,8 @@ export default defineConfig({
   plugins: [vue()],
   server: {
     proxy: {
-      "/admin": {
-        target: "http://ceshi13.dishait.cn",  // 代理的服务器地址  后缀不用写 api
+      "/user": {
+        target: "http://localhost:9090",  // 代理的服务器地址  后缀不用写 api
         changeOrigin: true, // 是否跨域
       },
     },
